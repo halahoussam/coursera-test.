@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hala</title>
+	<div>
+		<h1>test hala </h1>
+
+		</div>
+	<div class="container">
+		<div class="box">
+			1
+		</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+	</div>
+	<style type="text/css">
+		.container{
+			width: 100%;
+			height: auto;
+			background: #007bbf;
+            /*add flexbox style*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+
+		}
+		.content{background-color: pink; }
+		.box {
+			width: 200px;
+			height: 200px;
+			background: gray;
+			margin: 5px;
+			box-sizing: border-box;
+			font-size: 50px
+		}
+		h1 {margin-bottom: 30px;
+			color: pink;
+		}
+		/*add responsive media quaries*/
+		@media screen and (max-width: 992px)
+		{
+			.box{
+				width: 40%;
+
+			}
+			@media screen and (max-width: 991px) and (min-width: 768px)
+		{
+			.box{
+				width:50%;
+				
+			}
+			@media screen and(min-width: 768px)
+		{
+			.box{
+				width:100%;
+				
+			}
+			body {background-color: blue;}
+	</style>
+
+</head>
+<body>
+<div id="box">
+	<div id="content"></div>
+</body>
+</html>
